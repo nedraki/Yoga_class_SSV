@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Dash Board</title>
+  </head>
+  <body class="bg-dark">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <div class="container-md">
+      
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-lg-1"><!-- Left margin --></div>
+          
+          <!-- middel section -->
+          <div class="col-lg-10 bg-dark bg-gradient">
+            
+            <!-- Dash Board Heading -->            
+            <div class="container p-4">
+              <div class="row justify-content-md-center">
+                <div class="row">
+                  <div class="col">
+                    <!-- Quoets section -->
+                    <h1 class="text-light">Dash Board</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- middel user details -->            
+            <div class="container ">
+              <div class="row justify-content-md-center  rounded" style="background-image: linear-gradient(to bottom left, rgb(104, 216, 222),rgb(77, 160, 81))">
+                <div class="row">
+                  <div class="col ">
+                    <!-- Quoets section -->
+                    <p class="h2 text-dark mt-4">Hello {{f_name}} ! </p>
+                    <br/>
+                    <p class="fw-bold text-dark ml-3 fs-5">It is a great day to feel fit.</p>
+                  </div>
+                  
+                  <div class="col ">
+                    <!-- cleint details  -->
+                    <div class="row pt-5">
+                        <div class="col border-end border-2">
+                          <p class="text-center text-dark fs-5"><u>Age</u></p>
+                          <p class="text-center fw-bold text-dark fs-4">{{age_info}}</p>
+                        </div>
+                        <div class="col border-end border-2">
+                          <p class="text-center text-dark fs-5"><u>Weight</u></p>
+                          <p class="text-center fw-bold text-dark fs-4">{{weight_info}}</p>
+                        </div>
+                        <div class="col">
+                          <p class="text-center text-dark fs-5"><u>Height</u></p>
+                          <p class="text-center fw-bold text-dark fs-4">{{height_info}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Yoga Pose Information -->
+              <div class="container p-4">
+                <div class="row ">
+                  <div class="col pt-2 pb-2  rounded-pill" style="background-image: linear-gradient(to top right, rgb(79, 171, 166), rgb(81, 63, 164))">
+                    <p class="text-center text-light fs-5">Total Pose</p>
+                    <p class="text-center text-light fw-bolder fs-3">{{total_pose}}</p>
+                  </div>
+                  <div class="col-1 p-0"></div>
+                  <div class="col pt-2 pb-2 rounded-pill" style="background-image: linear-gradient(to bottom left, rgb(208, 87, 134), rgb(107, 74, 147))">
+                    <p class="text-center text-light fs-5">Total Repatition</p>
+                    <p class="text-center text-light fw-bolder fs-3">{{total_reps}}</p>
+                  </div>
+                  <div class="col-1 p-0"></div>
+                  <div class="col pt-2 pb-2 rounded-pill" style="background-image: linear-gradient(to top, rgb(231, 110, 110), rgb(211, 191, 62))">
+                    <p class="text-center text-light fs-5">Total Time</p>
+                    <p class="text-center text-light fw-bolder fs-3">{{total_time}} mins</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Yoga Pose Information -->
+              <div class="container ">
+                Chart
+              </div>
+            
+              
+
+
+            </div>
+
+          </div>
+          <div class="col col-lg-1"><!-- Right margin --></div>
+        </div>
+      </div>
+    
+      
+
+    </div>
+
+    <div class="footer text-light" id="footer" style="
+    padding: 10px 10px 10px 10px;
+    bottom: 0;
+    width: 100%; 
+    height: 40px; ">
+      <div class="footer-copyright " style="text-align:center; font-size: 13px">
+        <span class="credit">Developer Name: &nbsp
+          <a href="https://www.linkedin.com/in/sijal-kumar-joshi-b1545584/" class="text-warning" style="color: skyblue;">Sijal Kumar
+            Joshi,</a>
+                    <a href="https://www.linkedin.com/in/simon-snyders-9452aa146/" class="text-warning" style="color: skyblue;">Simon Snyders,
+                        </a>
+                    <a href="https://www.linkedin.com/in/vincent-rolin-/" class="text-warning" style="color: skyblue;">Vincent Rolin
+                        </a> &nbsp |
+        </span>
+        <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+        </div>
+      </div>  
+
+
+  
+  </body>
+</html>
